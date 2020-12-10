@@ -73,22 +73,4 @@ for k in range(len(lines)):
             if list[i][j] == lines[k][0] and j + len(lines[k])-1 <20 and i- len(lines[k])-1 >= 0:
                 c =0
                 for l in range(len(lines[k])):
-                    if list[i-l][j+l] == lines[k][l] :
-                        c +=1
-                if c == len(lines[k]):
-                    print("Rslide UP", lines[k],f" {i},{j}")
-
-            if list[i][j] == lines[k][0] and j - len(lines[k])-1 >= 0 and i - len(lines[k])-1 >=0:
-                c =0
-                for l in range(len(lines[k])):
-                    if list[i-l][j-l] == lines[k][l] :
-                        c +=1
-                if c == len(lines[k]):
-                    print("Lslide UP",lines[k],f" {i},{j}")
-            if list[i][j] == lines[k][0] and j - len(lines[k])-1 >= 0 and i + len(lines[k])-1 < 20:
-                c =0
-                for l in range(len(lines[k])):
-                    if list[i+l][j-l] == lines[k][l] :
-                        c +=1
-                if c == len(lines[k]):
-                    print("Lslide DOWN",lines[k],f" {i},{j}")
+                    if list[i-l
