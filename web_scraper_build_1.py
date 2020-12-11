@@ -17,8 +17,6 @@ time.sleep(5)
 
 html = driver.page_source
 
-#testhello
-
 # this renders the JS code and stores all
 # of the information in static HTML code.
 
@@ -28,9 +26,8 @@ all = soup.find('div',class_ = 'jsx-2110021720 WordSearchGrid grid')
 letter = all.find_all('span',class_ = 'jsx-2615216660 Character')
 for i in letter:
     list.append(i.text.lower())
-# printing top ten job profiles
  # closing the webdriver
-#driver.close()
+driver.close()
 list = np.array(list).reshape(20, 20)
 print(list)
 lines = []
@@ -44,7 +41,7 @@ with open("letters.txt") as fp:
 print(len(lines))
 print(len(list))
 print(len(list[0]))
-
+#CHECKING THROUGH THE GRID
 for k in range(len(lines)):
     for i in range(20):
         for j in range(20):
